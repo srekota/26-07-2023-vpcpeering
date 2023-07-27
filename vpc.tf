@@ -77,7 +77,7 @@ resource "aws_security_group" "dev-sg" {
     count = 1
     ami = "ami-0261755bbcb8c4a84"
     instance_type = "t2.micro"
-    key_name = "krishika"
+    key_name = "sreedhar"
     vpc_security_group_ids = [aws_security_group.dev-sg.id]
     subnet_id = element(aws_subnet.public1.*.id,count.index+1)
     associate_public_ip_address = true
