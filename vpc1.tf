@@ -84,7 +84,7 @@ resource "aws_security_group" "prod-sg" {
     count = 1
     ami = "ami-024e6efaf93d85776"
     instance_type = "t2.micro"
-    key_name = "krishika"
+    key_name = "srekota"
     vpc_security_group_ids = [aws_security_group.prod-sg.id]
     subnet_id = element(aws_subnet.publics.*.id,count.index+1)
     associate_public_ip_address = true
