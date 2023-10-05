@@ -1,6 +1,6 @@
 cidr_block = "10.20.0.0/16"
 vpc_name   = "dev"
-vpcs_name = "prod"
+vpcs_name = "prodas"
 cidr_block1 = "10.30.0.0/16"
 cidr_block_subnet = ["10.20.1.0/24","10.20.2.0/24","10.20.3.0/24"]
 cidr_block_subnets = ["10.30.1.0/24","10.30.2.0/24","10.30.3.0/24"]
